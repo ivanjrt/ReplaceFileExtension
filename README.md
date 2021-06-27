@@ -1,2 +1,5 @@
-# ReplaceFileExtension
-This is a one liner to replace an extension
+# ReplaceFileExtension for your desired
+
+```
+ls -Filter *.zip | ForEach-Object {$_ | Rename-Item -NewName $_.Name.Replace('zip', 'cbz')}
+```
